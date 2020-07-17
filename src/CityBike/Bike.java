@@ -1,4 +1,4 @@
-package Farzaneh;
+package CityBike;
 
 /*
 this.color = color;
@@ -27,7 +27,7 @@ public class Bike {
                 "bikeID=" + bikeID +
                 ", state='" + state + '\'' +
                 ", color='" + color + '\'' +
-                '}';
+                '}' + "\n";
     }
 }
 

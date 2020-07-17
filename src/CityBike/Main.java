@@ -1,4 +1,4 @@
-package Farzaneh;
+package CityBike;
 
 import java.util.HashMap;
 
@@ -28,6 +28,35 @@ public class Main {
         for (Integer i : bikes.keySet()) {
             System.out.println(bikes.get(i));
         }
+
+
+        Station station1 = new Station("Meidling");
+        Station station2 = new Station("Margareten Gurtel");
+        Station station3 = new Station("Karlsplatz");
+
+        HashMap<Integer, Station> stations = new HashMap <>();
+        stations.put(station1.getStationID(),station1);
+        stations.put(station2.getStationID(),station2);
+        stations.put(station3.getStationID(),station3);
+
+        station1.addBike(bike1);
+        station1.addBike(bike3);
+        station1.addBike(bike2);
+        station2.addBike(bike4);
+        station2.addBike(bike6);
+        station2.addBike(bike7);
+        station2.addBike(bike8);
+
+        System.out.println(station1);
+
+
+
+
+
+
+
+
+
     }
 
 }
