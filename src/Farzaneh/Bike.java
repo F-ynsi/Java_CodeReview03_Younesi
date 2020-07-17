@@ -17,6 +17,10 @@ public class Bike {
         this.color = color;
     }
 
+    public int getBikeID() {
+        return bikeID;
+    }
+
     @Override
     public String toString() {
         return "Bike{" +
