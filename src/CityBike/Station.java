@@ -30,9 +30,20 @@ public class Station {
     }
 
 
-    public void addBike (Bike x) {
-        bikes.add(x);
+    public void addBike (Bike b) {
+        if (bikes.size()<5) {
+            bikes.add(b);
+        }
+        else {
+            System.out.println("the station is full at the moment");
 
+
+        }
+
+    }
+
+    public void removeBike (Bike b) {
+        bikes.remove(b);
     }
 
 

@@ -49,6 +49,68 @@ public class Main {
 
         System.out.println(station1);
 
+        User user1 = new User("Eva","Ynsi");
+        User user2 = new User("Farzaneh","fff");
+        User user3 = new User("Donya","hhh");
+        User user4 = new User("Darya","BBB");
+
+        System.out.println("\nStation one before rent");
+        System.out.println(station1);
+        System.out.println("\nUser one before rent");
+        System.out.println(user1);
+
+
+        //Renting process fails. Bike cannot be rented cuz of the status
+        System.out.println("\n---------------------------------------" +
+                "Failed renting process--------------------------------------------");
+
+        user1.rentBike(bike3,station1);     //rent bike
+
+        System.out.println("\nStation one after rent");
+        System.out.println(station1);
+        System.out.println("\nUser one after rent");
+        System.out.println(user1);
+
+
+        System.out.println("\nStation two before bike return");
+        System.out.println(station2);
+
+        user1.removeBike(station2);     //returned bike
+
+        System.out.println("\nStation two after bike return");
+        System.out.println(station2);
+        System.out.println("\nUser one after bike return");
+        System.out.println(user1);
+
+
+
+
+        //Successful renting process.
+        System.out.println("\n---------------------------------------" +
+                "Successful renting process--------------------------------------------");
+
+        user1.rentBike(bike1,station1);     //rent bike
+
+        System.out.println("\nStation one after rent");
+        System.out.println(station1);
+        System.out.println("\nUser one after rent");
+        System.out.println(user1);
+
+
+        System.out.println("\nStation two before bike return");
+        System.out.println(station2);
+
+        user1.removeBike(station2);     //returned bike
+
+        System.out.println("\nStation two after bike return");
+        System.out.println(station2);
+        System.out.println("\nUser one after bike return");
+        System.out.println(user1);
+
+
+
+
+
 
 
 

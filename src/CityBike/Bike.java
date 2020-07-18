@@ -21,6 +21,10 @@ public class Bike {
         return bikeID;
     }
 
+    public String getState() {
+        return state;
+    }
+
     @Override
     public String toString() {
         return "Bike{" +
